@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>catmovie play</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="demo-template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Moovie CSS Style -->
+  <link rel="stylesheet" type="text/css" href="css/moovie.css">
+
+  <!-- GFonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color:#10131a;">
+
+  <!-- Page Content -->
+  <div id="intro">
+    <center>
+      <h1 style="color:rgb(255, 255, 255)">CAT MOVIE &#9752; </h1>
+    </center>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div <p style="margin-bottom: 49px; font-size: 28pt; color: white; font-family: Montserrat;">
+          </p>
+        </div>
+
+        <div style='max-width: 800px; position: relative; margin: 0 auto; margin-top: 0px; margin-top: 64px;'>
+          <video id="example" poster="https://m.media-amazon.com/images/I/515kE2dEFaL._AC_.jpg">
+            <source
+              src="https://cdn.srvcld.us/movies/934681/2018/07/Interstellar.2014.720p.IMAX.BluRay_IROMUSIC.mkv?md5=woJYcd3cWodg8nJES7NLeg&expires=1628808747"
+              type="video/mp4">
+            <track kind="captions" label="persian" srclang="pr"
+              src="https://cat.s3.ir-thr-at1.arvanstorage.com/Interstellar-2014-720p-per.srt">
+            <track kind="captions" label="English" srclang="en"
+              src="https://cat.s3.ir-thr-at1.arvanstorage.com/Interstellar.2014.BrRip.YIFY.en.srt">
+          </video>
+          <a class="btn btn-dark" href="https://catmovie.github.io/" target="_blank"
+            style="margin-top:50px; margin-bottom: 130px;">HOME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <head>
+    <style>
+      .center {
+        margin: auto;
+        width: 90%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h4 style="color:rgb(255, 255, 255)">Subtitle Tips:</h4>
+
+    <div class="center">
+      <p style="color: white;">•You can choose your subtitle language in the captions part.</br>
+        •Both Persian and English are available.</br>
+
+        •Also you can upload your own subtitle file by choosing loadlocally in the captions part.</br>
+
+        •You can set the subtitle speed in the captions offest part.</br>
+
+        •Finally you can contact us if there was any problem about subtitle setting , via the Telegram ID below
+        :</br>@cat_moviebot</p>
+      </br>
+
+    </div>
+
+  </body>
+
+  </br></br></br>
+  <center>
+    <h4 style=" color:rgb(112, 215, 255)">MUSIC</h4>
+    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137573089&color=%230062fc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+    <div
+      style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+      <a href="https://soundcloud.com/is-ghouneim" title="Ismaeil&#x27;s" target="_blank"
+        style="color: #cccccc; text-decoration: none;">Ismaeil&#x27;s</a> · <a
+        href="https://soundcloud.com/is-ghouneim/interstellar-main-theme"
+        title="Interstellar - Main Theme [Extended] - Hans Zimmer" target="_blank"
+        style="color: #cccccc; text-decoration: none;">Interstellar - Main Theme [Extended] - Hans Zimmer</a>
+    </div>
+  </center>
+  <!-- Moovie JS Core -->
+  <script src="js/moovie.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var demo1 = new Moovie({
+        selector: "#example",
+        dimensions: {
+          width: "100%"
+        },
+        config: {
+          storage: {
+            captionOffset: false,
+            playrateSpeed: false,
+            captionSize: false,
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

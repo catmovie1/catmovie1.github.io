@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>catmovie play</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="demo-template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Moovie CSS Style -->
+  <link rel="stylesheet" type="text/css" href="css/moovie.css">
+
+  <!-- GFonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color:#10131a;">
+
+  <!-- Page Content -->
+  <div id="intro">
+    <h1 style="color:rgb(255, 255, 255)">CAT MOVIE &#9752;</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div <p style="margin-bottom: 49px; font-size: 28pt; color: white; font-family: Montserrat;">
+          </p>
+        </div>
+
+        <div style='max-width: 800px; position: relative; margin: 0 auto; margin-top: 0px; margin-top: 64px;'>
+          <video id="example" poster="https://cat.s3.ir-thr-at1.arvanstorage.com/pic01.jpg">
+            <source
+              src="https://cdn.srvcld.us/movies/934681/2021/07/Black.Widow.2021.720p.WEB-DL.IROMUSIC.mkv?md5=8__5SfspA6K978sIt_Z7xg&expires=1628786152"
+              type="video/mp4">
+            <track kind="captions" label="persian" srclang="pr"
+              src="https://cat.s3.ir-thr-at1.arvanstorage.com/Black.Widow.srt">
+            <track kind="captions" label="English" srclang="en"
+              src="https://cat.s3.ir-thr-at1.arvanstorage.com/Black.Widow.2021.WEBRip.x264-ION10-HI.srt">
+          </video>
+          <a class="btn btn-dark" href="https://catmovie.github.io/" target="_blank"
+            style="margin-top:50px; margin-bottom: 130px;">HOME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Moovie JS Core -->
+  <script src="js/moovie.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var demo1 = new Moovie({
+        selector: "#example",
+        dimensions: {
+          width: "100%"
+        },
+        config: {
+          storage: {
+            captionOffset: false,
+            playrateSpeed: false,
+            captionSize: false,
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
